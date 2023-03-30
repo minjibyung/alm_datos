@@ -16,7 +16,8 @@ class ActivityAlmDatos : AppCompatActivity() {
         var miBundle: Bundle? =this.intent.extras
 
         if (miBundle != null) {
-            campoMensaje.text="Sus datos almacenados son: ${miBundle.getString("usuario")}\n ${miBundle.getString("contraseña")}"
+            campoMensaje.text="Sus datos almacenados son:\n Usuario : ${miBundle.getString("User")}\n " +
+                    "Contraseña : ${miBundle.getString("Pass")}"
 
         }
         val botonSalir:Button=findViewById(R.id.btnSalir)
